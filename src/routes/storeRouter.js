@@ -1,11 +1,6 @@
-// CREATE READ UPDATE DELETE
 
 const conn = require('../config/database/mysql.js')
 const router = require('express').Router()
-
-// store_id INT 
-// branch_name VARCHAR(30)
-
 /////////////////
 // C R E A T E //
 ////////////////

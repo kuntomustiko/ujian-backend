@@ -24,7 +24,7 @@ router.get('/uiroute', (req, res) => {
 ////////////////
 
 router.patch('/uiroute/:id', (req, res) => {
-    const sql = `const sql = UPDATE inventory SET ? WHERE inventory_id = ?`
+    const sql = `UPDATE inventory SET ? WHERE inventory_id = ?`
     const data = [req.body, req.params.id]
 
     conn.query(sql, data, (err, result) => {
@@ -37,7 +37,7 @@ router.patch('/uiroute/:id', (req, res) => {
 })
 
 //////////////////
-// D E L E T E //
+// T O M B O L - D E L E T E //
 ////////////////
 
 router.delete('/uiroute/:id', (req, res) => {
@@ -46,10 +46,8 @@ router.delete('/uiroute/:id', (req, res) => {
     conn.query(sql, data, (err, result) => {
         if (err) return res.send(err.sqlMessage)
         res.send({
-            message: "store berhasil di delete"
+            message: "route berhasil di delete"
         })
-
-
     })
 })
 

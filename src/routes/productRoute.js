@@ -1,15 +1,9 @@
-// CREATE READ UPDATE DELETE
 
 const conn = require('../config/database/mysql.js')
 const router = require('express').Router()
 const multer = require('multer')
 const sharp = require('sharp')
 const path = require('path')
-
-// product_id 
-// name 
-// price 
-// image
 
 /////////////////
 // C R E A T E //
